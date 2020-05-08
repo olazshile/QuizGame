@@ -40,11 +40,7 @@ function loadQuestion(questionIndex) {
       document.getElementById('endgame').style.display = 'block';
       document.getElementById('resultbox').style.display = 'none';
       document.getElementById('showresult').style.display = 'block';
-<<<<<<< HEAD
   document.getElementById('showresult').textContent = `Total Attained Point is ${correctAnswer} out of ${questions.length}`;
-=======
-  document.getElementById('showresult').textContent = `Total Attained Score is ${correctAnswer} out of ${questions.length}`;
->>>>>>> 568441ce88a8c02f0ddc455b291d0d135555ed34
       document.getElementById('playagain').style.display = 'block'; 
     }
 }
