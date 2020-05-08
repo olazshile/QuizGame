@@ -40,7 +40,7 @@ function loadQuestion(questionIndex) {
       document.getElementById('endgame').style.display = 'block';
       document.getElementById('resultbox').style.display = 'none';
       document.getElementById('showresult').style.display = 'block';
-  document.getElementById('showresult').textContent = `Your Score is ${correctAnswer} out of ${questions.length}`;
+  document.getElementById('showresult').textContent = `Total Attained Point is ${correctAnswer} out of ${questions.length}`;
       document.getElementById('playagain').style.display = 'block'; 
     }
 }
@@ -50,7 +50,7 @@ function loadNextQuestion() {
     loadQuestion(currentQuestion);
     currentQuestion++;
     if(currentQuestion === totalQuestion) {
-      nextQuestion.textContent = 'End Game';
+      nextQuestion.textContent = 'Check Result';
     }
     enableButton();
 }
@@ -60,11 +60,9 @@ function check(e) {
     if(e.id == questions[questionIndex].correctAnswer) {
       correctAnswer++;
         e.className = "correct";
-        e.innerHTML = "Correct Answer";
         resultCounter.textContent = correctAnswer;
     }else {
       e.className = "wrong";
-      e.innerHTML = "Wrong Answer";
     }
     disableButton();
 }
