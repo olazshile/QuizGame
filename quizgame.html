@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title> Quiz-Game </title>
+</head>
+<body>
+    
+    <div id="container">
+    
+        <header class="topbar">
+
+            <nav class="navbar-fixed">
+                <div class="navitem">
+                    <div class="welcomemessage">
+                        <h1> COMPUTER SCIENCE QUIZ CHALLENGE GAME </h1>
+                    </div>    
+                </div>
+            </nav>
+
+        </header>
+
+    <main>
+        <div class="main_container">
+            <div id="endgame"> <img src="star.png" width="100%"> </div>
+            <div id="question-container">
+                
+                <div id="question-number"> <h3> Questions </h3> </div>
+                    
+            <div id="question-index" class="question-index"> </div>
+                <div id="question-option">
+                    <div id="0" class="option" onclick="check(this)"></div> 
+                    <div id="1" class="option" onclick="check(this)"></div> 
+                    <div id="2" class="option" onclick="check(this)"></div> 
+                    <div id="3" class="option" onclick="check(this)"></div> 
+                </div>
+
+                <div class="button">
+                    <button type="button" id="nextbtn" onclick="loadNextQuestion()" class="btn"> Next </button>
+                </div>
+                
+                <div id="resultbox">
+                    Score : <span id="result"> 0 </span>
+                </div>
+                <div id="showresult"></div>
+            <div id="playagain"> <a href='index.html'> <img src="play.png" width="100%"> </a> </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+            <script src="questionbank.js"></script>
+            <script src="script.js"></script>            
+</html>
