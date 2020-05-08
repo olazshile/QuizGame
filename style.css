@@ -25,7 +25,6 @@ body {
 
 #container {
   overflow: auto;
-  background-color: orange;
   min-height: 100vh; }
 
 h1 {
@@ -49,7 +48,7 @@ a {
   left: 0;
   padding: 2rem;
   z-index: 9999;
-  background: orangered;
+  background: #ff6a33;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1); }
 
 .btn {
@@ -59,7 +58,7 @@ a {
   margin-top: 1rem;
   padding: 1rem 4rem;
   font-weight: 500;
-  background-color: orangered;
+  background: #ff6a33;
   border: 0; }
 
 .btn {
@@ -67,6 +66,9 @@ a {
   outline: none;
   display: block;
   float: right; }
+
+.btn:hover {
+  background-color: orangered; }
 
 #question-option div.correct::before, #question-option div.wrong::before {
   position: absolute;
@@ -86,24 +88,24 @@ a {
 
 #question-option div.correct::before {
   content: "";
-  background-color: #187f3c; }
+  background-color: #187f3c;
+  opacity: .85; }
 
 #question-option div.wrong::before {
   content: "";
-  background-color: red; }
+  background-color: red;
+  opacity: .7; }
 
 #question-number {
-  color: #edf2f7;
-  background-color: orangered;
   text-align: center;
   max-width: 25%;
-  margin: -3rem auto 0;
+  display: inline-block;
   padding: .5rem 0; }
 
 #question-index {
   font-weight: 500;
   margin: 2rem 0;
-  background-color: purple;
+  background-color: #0d98ba;
   color: #edf2f7;
   border-radius: 5px;
   padding: .8rem 1.5rem; }
@@ -113,9 +115,8 @@ a {
   position: relative;
   border-radius: 10px;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
-  padding: 5rem 5rem 2rem;
+  padding: 2.5rem 5rem;
   min-height: min-content;
-  background-color: orange;
   overflow: hidden; }
 
 #question-option > div {
@@ -126,24 +127,26 @@ a {
   cursor: default;
   border-radius: 8px;
   position: relative;
-  border: 1px solid orangered; }
+  border: 1px solid #0d98ba; }
 
 #question-option > div:last-child {
   margin-bottom: 0; }
 
+#question-option > div:hover {
+  box-shadow: 0px 3px 7px 0px rgba(13, 152, 186, 0.5); }
+
 #resultbox {
-  color: #edf2f7;
-  background-color: purple;
   width: 20%;
-  margin: 1rem auto 0;
   font-weight: 500;
   text-align: center;
+  display: inline-block;
   padding: .2rem 0 .5rem;
   font-size: 2rem;
-  cursor: default; }
+  cursor: default;
+  position: absolute;
+  right: 3%; }
 
 span {
-  color: orange;
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 700; }
@@ -152,16 +155,16 @@ span {
   font-weight: 500;
   margin: 2rem 0;
   text-align: center;
-  background-color: purple;
+  background-color: #0d98ba;
   color: #edf2f7;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: .8rem 1.5rem;
   display: none;
   font-size: 1.8rem; }
 
 #endgame {
-  width: 20%;
-  margin: -3rem auto 1rem;
+  width: 15%;
+  margin: -2rem auto 1rem;
   display: none; }
 
 #playagain {
@@ -173,11 +176,9 @@ span {
   margin-top: 13rem;
   border-radius: 10px;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
-  padding: 5rem;
+  padding: 2rem 5rem 3rem;
   min-height: min-content;
-  background-color: orange;
-  overflow: hidden;
-  color: #edf2f7; }
+  overflow: hidden; }
 
 .welcome h1 {
   font-size: 3rem;
@@ -199,8 +200,8 @@ a {
   margin-bottom: 1rem; }
 
 .start {
-  background-color: purple;
-  padding: .2rem 1rem .5rem;
+  background-color: #0d98ba;
+  padding: 0 1rem .3rem;
   border-radius: 10px;
   font-weight: 700; }
 
