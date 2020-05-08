@@ -144,7 +144,7 @@ a {
   font-size: 2rem;
   cursor: default;
   position: absolute;
-  right: 3%; }
+  right: 4%; }
 
 span {
   display: inline-block;
@@ -209,3 +209,52 @@ ul li {
   list-style-type: decimal;
   padding-left: 1rem;
   font-size: 1.6rem; }
+
+@media screen and (max-width: 556px) {
+  .welcome {
+    min-height: 45rem;
+    padding: 2rem 4rem 0;
+    border-radius: 0;
+    margin: 9rem 0 0;
+    box-shadow: none; }
+  .welcome h1 {
+    font-size: 1.8rem; }
+  .container {
+    height: min-content; }
+  ul li {
+    margin-bottom: 1rem; }
+  ul li:last-child {
+    margin-bottom: 2rem; }
+  .navbar-fixed {
+    padding: 1rem 2rem; }
+  .instruction-msg {
+    font-size: 1.5rem; }
+  #showresult {
+    font-size: 1.5rem; }
+  #question-container {
+    margin-top: 0;
+    padding: 1rem 2rem 2rem;
+    border-radius: 0; }
+  #endgame {
+    margin: 2rem auto; }
+  .point {
+    display: none; }
+  #resultbox {
+    text-align: left; }
+  .main_container {
+    padding: 4rem 2rem 0; } }
+
+@media screen and (min-width: 557px) and (max-width: 768px) {
+  .welcome {
+    min-width: 30rem;
+    margin: 10rem 2rem 0; }
+  .main_container {
+    padding: 2rem; }
+  .point {
+    display: none; }
+  #resultbox {
+    text-align: left; }
+  #question-container {
+    margin-top: 3rem; }
+  #endgame {
+    margin: 3rem auto 0; } }
