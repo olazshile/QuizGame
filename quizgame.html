@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title> Quiz-Game </title>
 </head>
@@ -30,7 +30,11 @@
             <div id="question-container">
                 
                 <div id="question-number"> <h3> Questions </h3> </div>
-                    
+
+                <div id="resultbox">
+                    Score &nbsp; <span id="result"> 0 </span>
+                </div>
+
             <div id="question-index" class="question-index"> </div>
                 <div id="question-option">
                     <div id="0" class="option" onclick="check(this)"></div> 
@@ -43,9 +47,6 @@
                     <button type="button" id="nextbtn" onclick="loadNextQuestion()" class="btn"> Next </button>
                 </div>
                 
-                <div id="resultbox">
-                    Score : <span id="result"> 0 </span>
-                </div>
                 <div id="showresult"></div>
             <div id="playagain"> <a href='index.html'> <img src="play.png" width="100%"> </a> </div>
 
