@@ -60,7 +60,7 @@ function check(e) {
     if(e.id == questions[questionIndex].correctAnswer) {
       correctAnswer++;
         e.className = "correct";
-        resultCounter.textContent = correctAnswer;
+        resultCounter.textContent = `${correctAnswer}/${questions.length}`;
     }else {
       e.className = "wrong";
     }
