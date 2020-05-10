@@ -37,10 +37,9 @@ function loadQuestion(questionIndex) {
       thirdopt.style.display = 'none';
       fourthopt.style.display = 'none';
       nextQuestion.style.display = 'none';
-      document.getElementById('endgame').style.display = 'block';
       document.getElementById('resultbox').style.display = 'none';
       document.getElementById('showresult').style.display = 'block';
-  document.getElementById('showresult').textContent = `Total Attained Point is ${correctAnswer} out of ${questions.length}`;
+      document.getElementById('showresult').textContent = `Total Attained Point is ${correctAnswer} out of ${questions.length}`;
       document.getElementById('playagain').style.display = 'block'; 
     }
 }
