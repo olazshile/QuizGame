@@ -37,7 +37,7 @@ a {
 
 .main_container, .welcome {
   max-width: 70rem;
-  margin: 7rem auto 0;
+  margin: 10rem auto 0;
   max-height: 50rem;
   padding: 5rem 0; }
 
@@ -161,11 +161,11 @@ span {
   padding: .8rem 1.5rem;
   display: none;
   font-size: 1.8rem; }
-
+/* 
 #endgame {
   width: 15%;
   margin: -2rem auto 1rem;
-  display: none; }
+  display: none; } */
 
 #playagain {
   width: 25%;
@@ -210,6 +210,8 @@ ul li {
   padding-left: 1rem;
   font-size: 1.6rem; }
 
+
+/* media queries for my quiz app */
 @media screen and (max-width: 556px) {
   .welcome {
     min-height: 45rem;
@@ -235,8 +237,8 @@ ul li {
     margin-top: 0;
     padding: 1rem 2rem 2rem;
     border-radius: 0; }
-  #endgame {
-    margin: 2rem auto; }
+/*   #endgame {
+    margin: 2rem auto; } */
   .point {
     display: none; }
   #resultbox {
@@ -256,5 +258,7 @@ ul li {
     text-align: left; }
   #question-container {
     margin-top: 3rem; }
-  #endgame {
-    margin: 3rem auto 0; } }
+/*   #endgame {
+    margin: 3rem auto 0; } */
+
+} 
